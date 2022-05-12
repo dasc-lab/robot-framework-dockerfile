@@ -1,5 +1,9 @@
 # robot-framework-dockerfile
-
+On host computer:
+```
+xhost +
+```
+Then start docker:
 ```
 nvidia-docker run --runtime=nvidia -it \
                   --env=LOCAL_USER_ID="$(id -u)" \
